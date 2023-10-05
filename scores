@@ -1,0 +1,28 @@
+# include <stdio.h>
+int main()
+{
+	int n;
+	printf("ENTER THE MARKS OF THE STUDENT :\n");
+	scanf("%d",&n);
+	if(n>=90)
+	{
+		printf("GRADE = A");
+	}
+	else if(n>=80)
+	{
+	    printf("GRADE = B");	
+	}
+	else if(n>=70)
+	{
+		printf("GRADE = C");
+	}
+	else if(n>=60)
+	{
+		printf("GRADE = D");
+	}
+	else
+	{
+		printf("GRADE = F");
+	}
+	return 0;
+}
