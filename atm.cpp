@@ -1,0 +1,33 @@
+# include <stdio.h>
+int main()
+{
+	int amount,f,h;
+	printf("ENTER THE AMOUNT :\n");
+	scanf("%d",&amount);
+	if(amount%100==0)
+	{
+		if(amount>20000)
+		{
+			printf("PLEASE ENTER THE LESSER DENOMINATION");
+		}
+		else if(amount<=500)
+		{
+			printf("%d hundreds\n",amount/100);
+		}
+		else
+		{
+			h=5;
+			f=(amount-500)/100;
+			h=h+((amount-500)%500)/100;
+			if(h>5)
+			{
+				f=f+1;
+				h=h-5;
+			}
+			printf("500s:%d\t 100s:%d\n",f,h);
+		}
+	}
+	else
+	printf("PLEASE ENTER ATLEAST MULTIPLES OF 100");
+	return 0;
+}
